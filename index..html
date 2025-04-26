@@ -4,10 +4,378 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Freelance Company Portfolio</title>
+    <title>Codext - SaaS Landing Page</title>
   </head>
   <body>
-    <h1>First Commit</h1>
+    <header>
+      <div class="container">
+        <h1>Codext</h1>
+        <nav>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#news">News</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="btn">Request Demo</a>
+        <button class="burger-btn" aria-label="Toggle Navigation">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="close-menu-btn" aria-label="Close Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m18 6-12 12" />
+          <path d="m6 6 12 12" />
+        </svg>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#news">News</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <h2>Codext - One of the Best Systems in SaaS</h2>
+        <p>Discover a new way to manage your business with Codext.</p>
+        <a href="#" class="btn">Get Started</a>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2>It's helpful for operating system</h2>
+        <div class="grid">
+          <div class="card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M10.21 4.13a8 8 0 109.66 9.66" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            <div>
+              <h3>High performance</h3>
+              <p>Codext ensures maximum performance for your applications.</p>
+            </div>
+          </div>
+          <div class="card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M10.21 4.13a8 8 0 109.66 9.66" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            <div>
+              <h3>Fast connections</h3>
+              <p>Enjoy lightning-fast connectivity with Codext.</p>
+            </div>
+          </div>
+          <div class="card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M10.21 4.13a8 8 0 109.66 9.66" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            <div>
+              <h3>24/7 support</h3>
+              <p>Our dedicated team is here to help you around the clock.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer-features">
+      <div class="container">
+        <h2>We provide best feature for customer</h2>
+        <div class="grid">
+          <div class="card">
+            <img
+              src="https://placehold.co/100x100/EEE/31343C"
+              alt="Feature 1"
+            />
+            <h3>Customizable</h3>
+            <p>Tailor Codext to fit your exact needs.</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://placehold.co/100x100/EEE/31343C"
+              alt="Feature 2"
+            />
+            <h3>Analytics</h3>
+            <p>Gain deep insights with our advanced analytics tools.</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://placehold.co/100x100/EEE/31343C"
+              alt="Feature 3"
+            />
+            <h3>Fast</h3>
+            <p>Experience the speed of Codext.</p>
+          </div>
+          <div class="card" style="grid-column: span 1 / span 3">
+            <img
+              src="https://placehold.co/100x100/EEE/31343C"
+              alt="Feature 4"
+            />
+            <h3>24/7 Support</h3>
+            <p>Our dedicated team is here to help you around the clock.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <h2>Choose your best pricing plan</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Basic</h3>
+            <p class="price">$10/mo</p>
+            <ul>
+              <li>10 Users</li>
+              <li>100GB Storage</li>
+              <li>Basic Support</li>
+            </ul>
+            <a href="#" class="btn">Get Started</a>
+          </div>
+          <div class="card">
+            <h3>Pro</h3>
+            <p class="price">$25/mo</p>
+            <ul>
+              <li>50 Users</li>
+              <li>500GB Storage</li>
+              <li>Priority Support</li>
+            </ul>
+            <a href="#" class="btn">Get Started</a>
+          </div>
+          <div class="card">
+            <h3>Enterprise</h3>
+            <p class="price">$49/mo</p>
+            <ul>
+              <li>Unlimited Users</li>
+              <li>Unlimited Storage</li>
+              <li>24/7 Support</li>
+            </ul>
+            <a href="#" class="btn">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+      <div class="container">
+        <h2>Let's see our user's review</h2>
+        <div class="grid">
+          <div class="card">
+            <div
+              style="display: flex; align-items: center; margin-bottom: 1rem"
+            >
+              <img src="https://placehold.co/50x50/EEE/31343C" alt="User 1" />
+              <h4>John Doe</h4>
+            </div>
+            <p>
+              "Codext has transformed our workflow. It's intuitive and
+              efficient."
+            </p>
+          </div>
+          <div class="card">
+            <div
+              style="display: flex; align-items: center; margin-bottom: 1rem"
+            >
+              <img src="https://placehold.co/50x50/EEE/31343C" alt="User 2" />
+              <h4>Jane Smith</h4>
+            </div>
+            <p>"The support team is amazing. They are always there to help."</p>
+          </div>
+          <div class="card">
+            <div
+              style="display: flex; align-items: center; margin-bottom: 1rem"
+            >
+              <img src="https://placehold.co/50x50/EEE/31343C" alt="User 3" />
+              <h4>David Lee</h4>
+            </div>
+            <p>
+              "We've seen a significant increase in productivity since using
+              Codext."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="news">
+      <div class="container">
+        <h2>Latest insights news</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="https://placehold.co/600x400/EEE/31343C" alt="News 1" />
+            <div style="padding: 1.5rem">
+              <h3>New Feature Release</h3>
+              <p>
+                We've just released a new feature that will change the way you
+                use Codext.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://placehold.co/600x400/EEE/31343C" alt="News 2" />
+            <div style="padding: 1.5rem">
+              <h3>Upcoming Event</h3>
+              <p>
+                Join us for our upcoming webinar on how to maximize your Codext
+                experience.
+              </p>
+              <a href="#">Register Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="grid">
+          <div>
+            <h4>About Us</h4>
+            <p>
+              Codext is a leading SaaS provider, dedicated to simplifying your
+              business processes.
+            </p>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <p>Email: info@codext.com</p>
+            <p>Phone: +123 456 7890</p>
+          </div>
+          <div>
+            <h4>Follow Us</h4>
+            <div class="social">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"
+                  />
+                  <rect width="8" height="8" x="10" y="10" rx="1" />
+                  <path d="M17.5 6.5h.01" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">© 2024 Codext. All rights reserved.</div>
+      </div>
+    </footer>
+
     <script src="index.js"></script>
   </body>
 </html>
