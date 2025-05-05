@@ -47,3 +47,11 @@ navLinks.forEach((link) => {
     }
   });
 });
+
+const projectsTitles = document.querySelectorAll(".title");
+
+projectsTitles.forEach((title) => {
+  title.addEventListener("click", () => {
+    window.open(title.getAttribute("data-link"), "_blank");
+  });
+});

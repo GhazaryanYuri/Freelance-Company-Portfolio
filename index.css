@@ -10,6 +10,11 @@ body {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: underline;
+  color: white;
+}
+
 section {
   width: 100%;
 }
@@ -127,6 +132,16 @@ nav ul li a:hover {
   align-self: flex-end;
 }
 
+.mobile-menu.active .contact-us {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .hero {
   background: linear-gradient(to right, #7c3aed, #6d28d9);
   color: white;
@@ -214,11 +229,27 @@ section h2 {
 
 .customer-features .card {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.customer-features .card img {
-  border-radius: 50%;
+.customer-features .card .img_cont {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
   margin-bottom: 1rem;
+  filter: drop-shadow(3px 3px 8px gray);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    scale: 1.35;
+  }
 }
 
 .pricing .grid {
@@ -244,70 +275,87 @@ section h2 {
 }
 
 .pricing .card ul {
-  list-style: disc;
+  list-style: none;
   list-style-position: inside;
   margin-bottom: 1.5rem;
   color: #6b7280;
-}
-
-.reviews {
-  background-color: #ede9fe;
-}
-
-.reviews .grid {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.reviews .card {
   display: flex;
   flex-direction: column;
+  gap: 6px;
 }
 
-.reviews .card img {
-  border-radius: 50%;
-  margin-right: 1rem;
-}
-
-.reviews .card h4 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #374151;
-}
-
-.reviews .card p {
-  color: #6b7280;
-}
-
-.news .grid {
+.projects .grid {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.news .card img {
-  width: 100%;
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
+.projects .grid .card {
+  max-width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
-.news .card h3 {
+.projects .grid .card .card_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.projects .grid .card .main {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.projects .grid .card .img_cont {
+  width: 100%;
+  height: 160px;
+  padding: 4px 6px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: 0.1s all linear;
+
+    &:hover {
+      scale: 1.05;
+    }
+  }
+}
+
+.projects .grid .card .info_cont h3 {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #374151;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.projects .card .info_cont p {
+  color: white;
   margin-bottom: 1rem;
 }
 
-.news .card p {
-  color: #6b7280;
-  margin-bottom: 1rem;
-}
-
-.news .card a {
-  color: #7c3aed;
+.projects .card .info_cont a {
+  color: white;
   font-weight: 600;
   text-decoration: none;
+  transition: 0.2s all linear;
 }
 
-.news .card a:hover {
-  color: #5b21b6;
+.projects .card .info_cont a:hover {
+  opacity: 0.8;
 }
 
 footer {
