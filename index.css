@@ -42,9 +42,10 @@ header .container {
   align-items: center;
 }
 
-header h1 {
+header a {
   font-size: 1.875rem;
   font-weight: 600;
+  text-decoration: none;
 }
 
 nav ul {
@@ -132,7 +133,7 @@ nav ul li a:hover {
   align-self: flex-end;
 }
 
-.mobile-menu.active .contact-us {
+.mobile-menu .contact-us {
   position: absolute;
   bottom: 12px;
   left: 12px;
@@ -185,6 +186,8 @@ section h2 {
 .grid {
   display: grid;
   gap: 2rem;
+  place-items: center;
+  place-content: center;
 }
 
 .card {
@@ -365,6 +368,8 @@ footer {
 }
 
 footer .grid {
+  display: grid;
+  place-items: start;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 

@@ -2,7 +2,7 @@ const burgerBtn = document.querySelector(".burger-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 const closeMenuBtn = document.querySelector(".close-menu-btn");
 const mobileMenuLinks = mobileMenu.querySelectorAll("a");
-const navLinks = document.querySelectorAll("nav a");
+const navLinks = document.querySelectorAll("header a");
 
 function toggleMobileMenu() {
   mobileMenu.classList.toggle("active");
